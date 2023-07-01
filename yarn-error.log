@@ -1,0 +1,55 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ThinkPad\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\ThinkPad\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ThinkPad\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts;C:\Python310;C:\Python27;C:\Python27\Scripts;C:\Program Files\Python39\Scripts;C:\Program Files\Python39;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\xampp\php;C:\Program Files\Git\cmd;C:\Users\ThinkPad\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs;C:\Program Files\OpenJDK\openjdk-8u322-b06\bin;C:\Users\ThinkPad\AppData\Local\Android\Sdk\platform-tools;C:\Users\ThinkPad\AppData\Local\Android\Sdk\tools;C:\Users\ThinkPad\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\Java\jdk-11.0.13\bin;C:\Program Files\dotnet;C:\Program Files\Ampps\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Docker\Docker\resources\bin;C:\minikube;C:\Users\ThinkPad\.console-ninja\.bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Ruby30-x64\bin;C:\Ruby31-x64\bin;C:\Users\ThinkPad\AppData\Local\Microsoft\WindowsApps;C:\Users\ThinkPad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinkPad\AppData\Roaming\Composer\vendor\bin;C:\Users\ThinkPad\Documents\Shopify-dev\themekit;C:\Users\ThinkPad\AppData\Roaming\npm;C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin;C:\flutter\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  17.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@expo/cli/-/cli-0.7.3.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\ThinkPad\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141517:19)
+      at Object.onceWrapper (node:events:641:28)
+      at ClientRequest.emit (node:events:527:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:771:9)
+      at Object.onceWrapper (node:events:641:28)
+      at TLSSocket.emit (node:events:539:35)
+      at TLSSocket.Socket._onTimeout (node:net:522:8)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  {
+    "name": "geolocalizacion-points",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web"
+    },
+    "dependencies": {
+      "expo": "~48.0.18",
+      "expo-status-bar": "~1.4.4",
+      "react": "18.2.0",
+      "react-native": "0.71.8"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.20.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
