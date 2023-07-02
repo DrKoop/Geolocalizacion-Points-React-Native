@@ -1,15 +1,15 @@
-import { StyleSheet, Text, View, Modal } from 'react-native';
+import { StyleSheet, Text, View, Modal, Dimensions } from 'react-native';
 
-const ModalMap = () => {
+const ModalMap = ({children, visibility}) => {
   return (
     <Modal
         animationType='fade'
         transparent={true}
-        visible={ true }
+        visible={ visibility }
    >
      <View style={ styles.center } >
        <View style={styles.modalView}>
-         <Text>Welcome Koop</Text>
+         {children}
        </View>
      </View>
    </Modal>
@@ -20,12 +20,14 @@ const styles = StyleSheet.create({
     center : {
       flex : 1,
       justifyContent :'center',
-      alignItems : 'center'
+      alignItems : 'center',
+      backgroundColor : 'rgba(0, 0 ,0 , 0.3)'
     },  
     modalView :{
+      minWidth : Dimensions.get('window').width -100,
       backgroundColor : '#fff',
       borderRadius : 4,
-      padding : 20,
+      padding : 0,
       shadowColor : '#000',
       shadowOffset :{
         width : 0,

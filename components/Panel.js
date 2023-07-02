@@ -1,11 +1,15 @@
-import { StyleSheet,Dimensions, Button, View } from 'react-native';
+import { StyleSheet,Dimensions, Button, View,Text } from 'react-native';
 
-const Panel = () => {
+const Panel = ({handleLista, title,togglePoints}) => {
   return (
+    <>
+    <Text>Manten Pulsado Cualquier Punto del Mapa</Text>
     <View style={styles.panelView}>
-        <Button title='Lista de Ubicaciónes'/>
-        <Button title='Mostrar/Ocultar'/>
+        
+        <Button title={title} onPress={handleLista} />
+        <Button title='Mostrar/Ocultar' onPress={togglePoints}/>
     </View>
+    </>
   )
 }
 
